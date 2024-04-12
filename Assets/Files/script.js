@@ -612,9 +612,21 @@ $(document).ready(function(){
         let phoneRegex = /^\d{10}$/;
         return phoneRegex.test(phone);
     }
+     
+     // Modules download Brochure Forms and Popups
+     //Popup 11
+     $("#openPopup11").click(function(){
+        $("#overlay11").fadeIn();
+        $("#popupForm11").fadeIn();
+    });
+
+    $(".close11").click(function(){
+        $("#overlay11").fadeOut();
+        $("#popupForm11").fadeOut();
+    });
 
 
-    // form 11
+    // form11
     $("#form11").submit(function(e){
         e.preventDefault();
         let name = $("#name11").val();
@@ -661,6 +673,493 @@ $(document).ready(function(){
         let phoneRegex = /^\d{10}$/;
         return phoneRegex.test(phone);
     }
+
+
+    //Popup 12
+    $("#openPopup12").click(function(){
+    $("#overlay12").fadeIn();
+    $("#popupForm12").fadeIn();
+});
+
+$(".close12").click(function(){
+    $("#overlay12").fadeOut();
+    $("#popupForm12").fadeOut();
+});
+
+
+// form12
+$("#form12").submit(function(e){
+    e.preventDefault();
+    let name = $("#name12").val();
+    let email = $("#email12").val();
+    let phone = $("#phone12").val();
+    $("#nameError12").text("");
+    $("#emailError12").text("");
+    $("#phoneError12").text("");
+
+    if(name.trim() === ""){
+        $("#nameError12").text("Name is required.");
+        return;
+    }
+
+    if(email.trim() === ""){
+        $("#emailError12").text("Email is required.");
+        return;
+    }
+
+    if(!isValidEmail(email)){
+        $("#emailError12").text("Invalid email address.");
+        return;
+    }
+
+    if(phone.trim() === ""){
+        $("#phoneError12").text("Phone number is required.");
+        return;
+    }
+
+    if(!isValidPhoneNumber(phone)){
+        $("#phoneError12").text("Invalid phone number.");
+        return;
+        }
+
+    $("#form12").unbind('submit').submit();
+});
+
+function isValidEmail(email){
+    let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return emailRegex.test(email);
+}
+
+function isValidPhoneNumber(phone){
+    let phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phone);
+}
+
+
+    //Popup 13
+    $("#openPopup13").click(function(){
+        $("#overlay13").fadeIn();
+        $("#popupForm13").fadeIn();
+    });
+    
+    $(".close13").click(function(){
+        $("#overlay13").fadeOut();
+        $("#popupForm13").fadeOut();
+    });
+    
+    
+    // form13
+    $("#form13").submit(function(e){
+        e.preventDefault();
+        let name = $("#name13").val();
+        let email = $("#email13").val();
+        let phone = $("#phone13").val();
+        $("#nameError13").text("");
+        $("#emailError13").text("");
+        $("#phoneError13").text("");
+    
+        if(name.trim() === ""){
+            $("#nameError13").text("Name is required.");
+            return;
+        }
+    
+        if(email.trim() === ""){
+            $("#emailError13").text("Email is required.");
+            return;
+        }
+    
+        if(!isValidEmail(email)){
+            $("#emailError13").text("Invalid email address.");
+            return;
+        }
+    
+        if(phone.trim() === ""){
+            $("#phoneError13").text("Phone number is required.");
+            return;
+        }
+    
+        if(!isValidPhoneNumber(phone)){
+            $("#phoneError13").text("Invalid phone number.");
+            return;
+            }
+    
+        $("#form13").unbind('submit').submit();
+    });
+    
+    function isValidEmail(email){
+        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+    }
+    
+    function isValidPhoneNumber(phone){
+        let phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phone);
+    }
+
+
+     //Popup 14
+     $("#openPopup14").click(function(){
+        $("#overlay14").fadeIn();
+        $("#popupForm14").fadeIn();
+    });
+    
+    $(".close14").click(function(){
+        $("#overlay14").fadeOut();
+        $("#popupForm14").fadeOut();
+    });
+    
+    
+    // form14
+    $("#form14").submit(function(e){
+        e.preventDefault();
+        let name = $("#name14").val();
+        let email = $("#email14").val();
+        let phone = $("#phone14").val();
+        $("#nameError14").text("");
+        $("#emailError14").text("");
+        $("#phoneError14").text("");
+    
+        if(name.trim() === ""){
+            $("#nameError14").text("Name is required.");
+            return;
+        }
+    
+        if(email.trim() === ""){
+            $("#emailError14").text("Email is required.");
+            return;
+        }
+    
+        if(!isValidEmail(email)){
+            $("#emailError14").text("Invalid email address.");
+            return;
+        }
+    
+        if(phone.trim() === ""){
+            $("#phoneError14").text("Phone number is required.");
+            return;
+        }
+    
+        if(!isValidPhoneNumber(phone)){
+            $("#phoneError14").text("Invalid phone number.");
+            return;
+            }
+    
+        $("#form14").unbind('submit').submit();
+    });
+    
+    function isValidEmail(email){
+        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+    }
+    
+    function isValidPhoneNumber(phone){
+        let phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phone);
+    }
+
+
+
+    //Popup 15
+    $("#openPopup15").click(function(){
+        $("#overlay15").fadeIn();
+        $("#popupForm15").fadeIn();
+    });
+    
+    $(".close15").click(function(){
+        $("#overlay15").fadeOut();
+        $("#popupForm15").fadeOut();
+    });
+    
+    
+    // form15
+    $("#form15").submit(function(e){
+        e.preventDefault();
+        let name = $("#name15").val();
+        let email = $("#email15").val();
+        let phone = $("#phone15").val();
+        $("#nameError15").text("");
+        $("#emailError15").text("");
+        $("#phoneError15").text("");
+    
+        if(name.trim() === ""){
+            $("#nameError15").text("Name is required.");
+            return;
+        }
+    
+        if(email.trim() === ""){
+            $("#emailError15").text("Email is required.");
+            return;
+        }
+    
+        if(!isValidEmail(email)){
+            $("#emailError15").text("Invalid email address.");
+            return;
+        }
+    
+        if(phone.trim() === ""){
+            $("#phoneError15").text("Phone number is required.");
+            return;
+        }
+    
+        if(!isValidPhoneNumber(phone)){
+            $("#phoneError15").text("Invalid phone number.");
+            return;
+            }
+    
+        $("#form15").unbind('submit').submit();
+    });
+    
+    function isValidEmail(email){
+        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+    }
+    
+    function isValidPhoneNumber(phone){
+        let phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phone);
+    }
+
+
+     //Popup 16
+     $("#openPopup16").click(function(){
+        $("#overlay16").fadeIn();
+        $("#popupForm16").fadeIn();
+    });
+    
+    $(".close16").click(function(){
+        $("#overlay16").fadeOut();
+        $("#popupForm16").fadeOut();
+    });
+    
+    
+    // form16
+    $("#form16").submit(function(e){
+        e.preventDefault();
+        let name = $("#name16").val();
+        let email = $("#email16").val();
+        let phone = $("#phone16").val();
+        $("#nameError16").text("");
+        $("#emailError16").text("");
+        $("#phoneError16").text("");
+    
+        if(name.trim() === ""){
+            $("#nameError16").text("Name is required.");
+            return;
+        }
+    
+        if(email.trim() === ""){
+            $("#emailError16").text("Email is required.");
+            return;
+        }
+    
+        if(!isValidEmail(email)){
+            $("#emailError16").text("Invalid email address.");
+            return;
+        }
+    
+        if(phone.trim() === ""){
+            $("#phoneError16").text("Phone number is required.");
+            return;
+        }
+    
+        if(!isValidPhoneNumber(phone)){
+            $("#phoneError16").text("Invalid phone number.");
+            return;
+            }
+    
+        $("#form16").unbind('submit').submit();
+    });
+    
+    function isValidEmail(email){
+        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+    }
+    
+    function isValidPhoneNumber(phone){
+        let phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phone);
+    }
+
+
+
+    //Popup 17
+    $("#openPopup17").click(function(){
+        $("#overlay17").fadeIn();
+        $("#popupForm17").fadeIn();
+    });
+    
+    $(".close17").click(function(){
+        $("#overlay17").fadeOut();
+        $("#popupForm17").fadeOut();
+    });
+    
+    
+    // form17
+    $("#form17").submit(function(e){
+        e.preventDefault();
+        let name = $("#name17").val();
+        let email = $("#email17").val();
+        let phone = $("#phone17").val();
+        $("#nameError17").text("");
+        $("#emailError17").text("");
+        $("#phoneError17").text("");
+    
+        if(name.trim() === ""){
+            $("#nameError17").text("Name is required.");
+            return;
+        }
+    
+        if(email.trim() === ""){
+            $("#emailError17").text("Email is required.");
+            return;
+        }
+    
+        if(!isValidEmail(email)){
+            $("#emailError17").text("Invalid email address.");
+            return;
+        }
+    
+        if(phone.trim() === ""){
+            $("#phoneError17").text("Phone number is required.");
+            return;
+        }
+    
+        if(!isValidPhoneNumber(phone)){
+            $("#phoneError17").text("Invalid phone number.");
+            return;
+            }
+    
+        $("#form17").unbind('submit').submit();
+    });
+    
+    function isValidEmail(email){
+        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+    }
+    
+    function isValidPhoneNumber(phone){
+        let phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phone);
+    }
+
+
+
+        //Popup 18
+        $("#openPopup18").click(function(){
+            $("#overlay18").fadeIn();
+            $("#popupForm18").fadeIn();
+        });
+        
+        $(".close18").click(function(){
+            $("#overlay18").fadeOut();
+            $("#popupForm18").fadeOut();
+        });
+        
+        
+        // form18
+        $("#form18").submit(function(e){
+            e.preventDefault();
+            let name = $("#name18").val();
+            let email = $("#email18").val();
+            let phone = $("#phone18").val();
+            $("#nameError18").text("");
+            $("#emailError18").text("");
+            $("#phoneError18").text("");
+        
+            if(name.trim() === ""){
+                $("#nameError18").text("Name is required.");
+                return;
+            }
+        
+            if(email.trim() === ""){
+                $("#emailError18").text("Email is required.");
+                return;
+            }
+        
+            if(!isValidEmail(email)){
+                $("#emailError18").text("Invalid email address.");
+                return;
+            }
+        
+            if(phone.trim() === ""){
+                $("#phoneError18").text("Phone number is required.");
+                return;
+            }
+        
+            if(!isValidPhoneNumber(phone)){
+                $("#phoneError18").text("Invalid phone number.");
+                return;
+                }
+        
+            $("#form18").unbind('submit').submit();
+        });
+        
+        function isValidEmail(email){
+            let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            return emailRegex.test(email);
+        }
+        
+        function isValidPhoneNumber(phone){
+            let phoneRegex = /^\d{10}$/;
+            return phoneRegex.test(phone);
+        }
+
+
+
+
+
+   
+
+    // form 100
+    $("#form100").submit(function(e){
+        e.preventDefault();
+        let name = $("#name100").val();
+        let email = $("#email100").val();
+        let phone = $("#phone100").val();
+        $("#nameError100").text("");
+        $("#emailError100").text("");
+        $("#phoneError100").text("");
+
+        if(name.trim() === ""){
+            $("#nameError100").text("Name is required.");
+            return;
+        }
+
+        if(email.trim() === ""){
+            $("#emailError100").text("Email is required.");
+            return;
+        }
+
+        if(!isValidEmail(email)){
+            $("#emailError100").text("Invalid email address.");
+            return;
+        }
+
+        if(phone.trim() === ""){
+            $("#phoneError100").text("Phone number is required.");
+            return;
+        }
+
+        if(!isValidPhoneNumber(phone)){
+            $("#phoneError100").text("Invalid phone number.");
+            return;
+          }
+
+        $("#form100").unbind('submit').submit();
+    });
+
+    function isValidEmail(email){
+        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+    }
+
+    function isValidPhoneNumber(phone){
+        let phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phone);
+    }
+
+   
+
     
 
     // sticky bar
@@ -682,37 +1181,20 @@ $(document).ready(function(){
     $('.slider').slick({
         arrows: true,
         prevArrow: '<button type-"button" class="slick-prev">&lt;</button>',
-        nextArrow: '<button type="button" class="slick-next">&gt;</button>'
+        nextArrow: '<button type="button" class="slick-next">&gt;</button>',
+        dots: true,
     });
 
-    // Read more
-    // $(".read-more-btn").click(function(){
-    //     let $this = $(this);
-    //     let $moreText = $this.parent().next(".more");
-
-    //     $moreText.slideToggle(300,function(){
-    //         $this.text($this.text() === "Read more" ? "Read less" : "Read more");
-    //     });
-    // });
-
-    // $(".read-more-btn").click(function(){
-    //     var $this = $(this);
-    //     var $moreText = $this.prev(".more");
-    
-    //     $moreText.slideToggle(300, function(){
-    //       $this.text($moreText.is(":visible") ? "Read less" : "Read more");
-    //     });
-    //   });
-
+    // Read more Functionality
     $('.summary').each(function() {
-        var content = $(this).text();
-        var words = content.split(' ');
+        let content = $(this).text();
+        let words = content.split(' ');
     
         if (words.length > 10) {
-          var visibleText = words.slice(0, 10).join(' ') + ' ';
-          var hiddenText = words.slice(10).join(' ');
-          var fullText = visibleText + '<span class="ellipsis">...</span><span class="more-text" style="display: none;">' + hiddenText + '</span>';
-          var toggleLink = ' <a href="#" class="read-more">Read more</a>';
+            let visibleText = words.slice(0, 10).join(' ') + ' ';
+            let hiddenText = words.slice(10).join(' ');
+            let fullText = visibleText + '<span class="ellipsis">...</span><span class="more-text" style="display: none;">' + hiddenText + '</span>';
+            let toggleLink = ' <a href="#" class="read-more">Read more</a>';
           
           $(this).html(fullText + toggleLink);
         }
@@ -720,10 +1202,10 @@ $(document).ready(function(){
     
       $(document).on('click', '.read-more', function(e) {
         e.preventDefault();
-        var $this = $(this);
-        var $content = $this.parent();
-        var $ellipsis = $content.find('.ellipsis');
-        var $moreText = $content.find('.more-text');
+        let $this = $(this);
+        let $content = $this.parent();
+        let $ellipsis = $content.find('.ellipsis');
+        let $moreText = $content.find('.more-text');
     
         $ellipsis.toggle();
         $moreText.toggle();
