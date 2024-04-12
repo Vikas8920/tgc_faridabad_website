@@ -1106,6 +1106,129 @@ function isValidPhoneNumber(phone){
 
 
 
+        //Popup 19
+        $("#openPopup19").click(function(){
+            $("#overlay19").fadeIn();
+            $("#popupForm19").fadeIn();
+        });
+        
+        $(".close19").click(function(){
+            $("#overlay19").fadeOut();
+            $("#popupForm19").fadeOut();
+        });
+        
+        
+        // form19
+        $("#form19").submit(function(e){
+            e.preventDefault();
+            let name = $("#name19").val();
+            let email = $("#email19").val();
+            let phone = $("#phone19").val();
+            $("#nameError19").text("");
+            $("#emailError19").text("");
+            $("#phoneError19").text("");
+        
+            if(name.trim() === ""){
+                $("#nameError19").text("Name is required.");
+                return;
+            }
+        
+            if(email.trim() === ""){
+                $("#emailError19").text("Email is required.");
+                return;
+            }
+        
+            if(!isValidEmail(email)){
+                $("#emailError19").text("Invalid email address.");
+                return;
+            }
+        
+            if(phone.trim() === ""){
+                $("#phoneError19").text("Phone number is required.");
+                return;
+            }
+        
+            if(!isValidPhoneNumber(phone)){
+                $("#phoneError19").text("Invalid phone number.");
+                return;
+                }
+        
+            $("#form19").unbind('submit').submit();
+        });
+        
+        function isValidEmail(email){
+            let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            return emailRegex.test(email);
+        }
+        
+        function isValidPhoneNumber(phone){
+            let phoneRegex = /^\d{10}$/;
+            return phoneRegex.test(phone);
+        }
+
+
+
+    
+     //Popup 20
+     $("#openPopup20").click(function(){
+        $("#overlay20").fadeIn();
+        $("#popupForm20").fadeIn();
+    });
+    
+    $(".close20").click(function(){
+        $("#overlay20").fadeOut();
+        $("#popupForm20").fadeOut();
+    });
+    
+    
+    // form20
+    $("#form20").submit(function(e){
+        e.preventDefault();
+        let name = $("#name20").val();
+        let email = $("#email20").val();
+        let phone = $("#phone20").val();
+        $("#nameError20").text("");
+        $("#emailError20").text("");
+        $("#phoneError20").text("");
+    
+        if(name.trim() === ""){
+            $("#nameError20").text("Name is required.");
+            return;
+        }
+    
+        if(email.trim() === ""){
+            $("#emailError20").text("Email is required.");
+            return;
+        }
+    
+        if(!isValidEmail(email)){
+            $("#emailError20").text("Invalid email address.");
+            return;
+        }
+    
+        if(phone.trim() === ""){
+            $("#phoneError20").text("Phone number is required.");
+            return;
+        }
+    
+        if(!isValidPhoneNumber(phone)){
+            $("#phoneError20").text("Invalid phone number.");
+            return;
+            }
+    
+        $("#form20").unbind('submit').submit();
+    });
+    
+    function isValidEmail(email){
+        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+    }
+    
+    function isValidPhoneNumber(phone){
+        let phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phone);
+    }
+
 
 
    
@@ -1190,10 +1313,10 @@ function isValidPhoneNumber(phone){
         let content = $(this).text();
         let words = content.split(' ');
     
-        if (words.length > 10) {
-            let visibleText = words.slice(0, 10).join(' ') + ' ';
-            let hiddenText = words.slice(10).join(' ');
-            let fullText = visibleText + '<span class="ellipsis">...</span><span class="more-text" style="display: none;">' + hiddenText + '</span>';
+        if (words.length > 0) {
+            let visibleText = words.slice(0, 0).join(' ') + ' ';
+            let hiddenText = words.slice(0).join(' ');
+            let fullText = visibleText + '<span class="ellipsis"></span><span class="more-text" style="display: none;">' + hiddenText + '</span>';
             let toggleLink = ' <a href="#" class="read-more">Read more</a>';
           
           $(this).html(fullText + toggleLink);
@@ -1204,10 +1327,10 @@ function isValidPhoneNumber(phone){
         e.preventDefault();
         let $this = $(this);
         let $content = $this.parent();
-        let $ellipsis = $content.find('.ellipsis');
+        //let $ellipsis = $content.find('.ellipsis');
         let $moreText = $content.find('.more-text');
     
-        $ellipsis.toggle();
+        //$ellipsis.toggle();
         $moreText.toggle();
         $this.text($moreText.is(':visible') ? 'Read less' : 'Read more');
     });
