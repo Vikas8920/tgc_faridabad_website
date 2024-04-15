@@ -1,8 +1,12 @@
 $(document).ready(function(){
     //Download Syllabus
-    $('#close').click(function(){
-        $('.syllabus_container').hide();
-    })
+    // $('#close').click(function(){
+    //     $('.syllabus_container').hide();
+    // })
+
+    $('.hamburger').click(function(){
+        $('#menu').toggle();
+    });
 
 
     //Faq Accordion
@@ -549,65 +553,65 @@ $(document).ready(function(){
     }
 
 
-     // popup10
-     $("#openPopup10").click(function(){
-        $("#overlay10").fadeIn();
-        $("#popupForm10").fadeIn();
-    });
+    //  // popup10
+    //  $("#openPopup10").click(function(){
+    //     $("#overlay10").fadeIn();
+    //     $("#popupForm10").fadeIn();
+    // });
 
-    $(".close10").click(function(){
-        $("#overlay10").fadeOut();
-        $("#popupForm10").fadeOut();
-    });
+    // $(".close10").click(function(){
+    //     $("#overlay10").fadeOut();
+    //     $("#popupForm10").fadeOut();
+    // });
 
 
-    // form10
-    $("#form10").submit(function(e){
-        e.preventDefault();
-        let name = $("#name10").val();
-        let email = $("#email10").val();
-        let phone = $("#phone10").val();
-        $("#nameError10").text("");
-        $("#emailError10").text("");
-        $("#phoneError10").text("");
+    // // form10
+    // $("#form10").submit(function(e){
+    //     e.preventDefault();
+    //     let name = $("#name10").val();
+    //     let email = $("#email10").val();
+    //     let phone = $("#phone10").val();
+    //     $("#nameError10").text("");
+    //     $("#emailError10").text("");
+    //     $("#phoneError10").text("");
 
-        if(name.trim() === ""){
-            $("#nameError10").text("Name is required.");
-            return;
-        }
+    //     if(name.trim() === ""){
+    //         $("#nameError10").text("Name is required.");
+    //         return;
+    //     }
 
-        if(email.trim() === ""){
-            $("#emailError10").text("Email is required.");
-            return;
-        }
+    //     if(email.trim() === ""){
+    //         $("#emailError10").text("Email is required.");
+    //         return;
+    //     }
 
-        if(!isValidEmail(email)){
-            $("#emailError10").text("Invalid email address.");
-            return;
-        }
+    //     if(!isValidEmail(email)){
+    //         $("#emailError10").text("Invalid email address.");
+    //         return;
+    //     }
 
-        if(phone.trim() === ""){
-            $("#phoneError10").text("Phone number is required.");
-            return;
-        }
+    //     if(phone.trim() === ""){
+    //         $("#phoneError10").text("Phone number is required.");
+    //         return;
+    //     }
 
-        if(!isValidPhoneNumber(phone)){
-            $("#phoneError10").text("Invalid phone number.");
-            return;
-          }
+    //     if(!isValidPhoneNumber(phone)){
+    //         $("#phoneError10").text("Invalid phone number.");
+    //         return;
+    //       }
 
-        $("#form10").unbind('submit').submit();
-    });
+    //     $("#form10").unbind('submit').submit();
+    // });
 
-    function isValidEmail(email){
-        let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-        return emailRegex.test(email);
-    }
+    // function isValidEmail(email){
+    //     let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    //     return emailRegex.test(email);
+    // }
 
-    function isValidPhoneNumber(phone){
-        let phoneRegex = /^\d{10}$/;
-        return phoneRegex.test(phone);
-    }
+    // function isValidPhoneNumber(phone){
+    //     let phoneRegex = /^\d{10}$/;
+    //     return phoneRegex.test(phone);
+    // }
      
      // Modules download Brochure Forms and Popups
      //Popup 11

@@ -1,0 +1,27 @@
+<section class="syllabus_container">
+    <div class="syllabus-content">
+        <!-- Popup 10 -->
+        <h3>Need more Info? <button type="button" id="openPopup10"><u>Download Syllabus</u></button></h3>
+        <!-- Overlay -->
+        <div id="overlay10" class="overlay"></div>
+        <!-- Popup -->
+        <div id="popupForm10" class="popup">
+            <span class="close close10">&times;</span>
+            <!-- Form 10 -->
+            <form id="form10" action="Assets/Files/submit.php" method="post">
+                <h2>Download Syllabus</h2>
+                <div class="apply-inputs">
+                    <input type="hidden" name="source" value="TGC Website 2024">
+                    <input type="text" placeholder="Name" id="name10" name="name" autocomplete="off">
+                    <div class="error" id="nameError10"></div>
+                    <input type="email" placeholder="Email" id="email10" name="email" autocomplete="off">
+                    <div class="error" id="emailError10"></div>
+                    <input type="tel" placeholder="Phone" id="phone10" name="phone" autocomplete="off">
+                    <div class="error" id="phoneError10"></div>
+                </div>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+        <i class="fa fa-times" id="close"></i>
+    </div>
+</section>

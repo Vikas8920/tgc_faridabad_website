@@ -16,36 +16,21 @@
             <a href="tel:+91 9582786407"><img class="phone" src="Assets/Image/square.png" alt=""></a>
         </div>
         
-        <img class="arrow" src="https://assets-global.website-files.com/625416528a3419ca302b6dd8/62874784dadd6a1f92ae0e21_Group%2048096702.svg" alt="" width="200px">
+        <!-- <img class="arrow" src="https://assets-global.website-files.com/625416528a3419ca302b6dd8/62874784dadd6a1f92ae0e21_Group%2048096702.svg" alt="" width="200px"> -->
 
-        <!-- Syllabus Section -->
-        <section class="syllabus_container">
-            <div class="syllabus-content">
-                <!-- Popup 10 -->
-                <h3>Need more Info? <button type="button" id="openPopup10"><u>Download Syllabus</u></button></h3>
-                <!-- Overlay -->
-                <div id="overlay10" class="overlay"></div>
-                <!-- Popup -->
-                <div id="popupForm10" class="popup">
-                    <span class="close close10">&times;</span>
-                    <!-- Form 10 -->
-                    <form id="form10" action="Assets/Files/submit.php" method="post">
-                        <h2>Download Syllabus</h2>
-                        <div class="apply-inputs">
-                            <input type="hidden" name="source" value="TGC Website 2024">
-                            <input type="text" placeholder="Name" id="name10" name="name" autocomplete="off">
-                            <div class="error" id="nameError10"></div>
-                            <input type="email" placeholder="Email" id="email10" name="email" autocomplete="off">
-                            <div class="error" id="emailError10"></div>
-                            <input type="tel" placeholder="Phone" id="phone10" name="phone" autocomplete="off">
-                            <div class="error" id="phoneError10"></div>
-                        </div>
-                        <button type="submit" value="Submit">Submit</button>
-                    </form>
-                </div>
-                <i class="fa fa-times" id="close"></i>
+        <!-- Navbar Section -->
+        <nav>  
+            <div class="logo">
+                <img src="Assets/Image/logo_tgc.webp" alt="">
             </div>
-        </section>
+            <div class="menu" id="menu">
+                <a href="#course">Course</a>
+                <i class="fa fa-phone"></i><a href="tel:9582786407">9582786407 ,</a>  <a href="tel: 9582786406">9582786406</a>
+                <a href="tel:9582786406">Click to Call</a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+        </nav>
+        
  
         <!-- Hero Section -->
         <section class="hero">
@@ -108,7 +93,7 @@
             </div>
         </section>
 
-        <img class="arrow1" src="https://assets-global.website-files.com/625416528a3419ca302b6dd8/62874784dadd6a1f92ae0e21_Group%2048096702.svg" alt="" width="200px">
+        <!-- <img class="arrow1" src="https://assets-global.website-files.com/625416528a3419ca302b6dd8/62874784dadd6a1f92ae0e21_Group%2048096702.svg" alt="" width="200px"> -->
 
         <!-- Offline and Online Section -->
         <section class="deadline-container">
@@ -175,6 +160,7 @@
             <h1>Are you looking for the best Digital Media Training in Faridabad?</h1>
             <p class="para1">TGC with 24 Years of proven experience, 20,000+ Passed out students, Centres across India is now in Faridabad.</p>
             <p class="para2">Our Expert trainers and professional placement team work in tandem to help you trained on courses in Graphic Design, Fullstack Web Development, Animation and VFx, Video Editing, Python and Data Analytics, Digital Marketing and CAD etc.</p>
+            <a name="course"></a>
             <h2>Our Courses</h2>
 
             <div class="module-container">
@@ -230,7 +216,7 @@
                         </div>
 
                         <div class="module-card">
-                            <h3>Animation Course:</h3>
+                            <h3>Animation:</h3>
                             <p>Step into the animated world with TGC's Animation Course, where your imagination comes to life through 2D and 3D animation, character design, and motion graphics. Guided by animation veterans, our curriculum immerses you in the latest software and storytelling techniques. Perfect your craft with hands-on projects, leading to a professional portfolio that opens doors to exciting careers in animation and beyond. <a href="">Read more</a></p>
                             <!-- Popus 13 -->
                             <button type="button" id="openPopup13">Enquire Now</button>
@@ -278,8 +264,8 @@
                             </div>
                         </div>
 
-                        <div class="module-card module-card-h3">
-                            <h3>Architecture and Civil CAD Course:</h3>
+                        <div class="module-card">
+                            <h3>Archi. and Civil CAD:</h3>
                             <p>Build your foundation in design with TGC's Architecture and Civil CAD Course, focusing on AutoCAD, Revit, and SketchUp. Delve into architectural design and civil engineering principles under the guidance of experienced professionals. Our hands-on approach ensures you develop a portfolio showcasing your technical skills and design acumen, primed for a flourishing career in the architecture and civil engineering sectors. <a href="">Read more</a></p>
                             <!-- Popus 15 -->
                             <button type="button" id="openPopup15">Enquire Now</button>
@@ -327,8 +313,8 @@
                             </div>
                         </div>
 
-                        <div class="module-card  module-card-h3">
-                            <h3>Data Analytics Course:</h3>
+                        <div class="module-card">
+                            <h3>Data Analytics:</h3>
                             <p>Unlock the power of data with TGC's Data Analytics Course, exploring SQL, Python, Tableau, and more. Taught by data experts, our curriculum is designed with a focus on real-world data problems, ensuring you gain hands-on experience. Develop a strong analytical portfolio, enhanced by our dedicated internship and job assistance, leading you to a successful career in data analytics. <a href="">Read more</a></p>
                             <!-- Popus 17 -->
                             <button type="button" id="openPopup17">Enquire Now</button>
@@ -377,7 +363,7 @@
                         </div>
 
                         <div class="module-card">
-                            <h3>UI UX COIURSE:</h3>
+                            <h3>UI UX:</h3>
                             <p>TGC's UI/UX Design Course, where your creativity shapes intuitive and impactful user experiences. Led by industry experts, our curriculum introduces you to the latest design tools and user research methodologies. Hone your skills with practical projects, culminating in a standout portfolio that paves the way to dynamic careers in UI/UX design and beyond. <a href="">Read more</a></p>
                             <!-- Popus 19 -->
                             <button type="button" id="openPopup19">Enquire Now</button>
@@ -484,7 +470,7 @@
                         </div>
 
                         <div class="module-card module-h3">
-                            <h3>Video Editing Course:</h3>
+                            <h3>Video Editing:</h3>
                             <p>Cut and craft compelling stories with TGC's Video Editing Course, mastering industry-standard tools like Adobe Premiere Pro and After Effects. Learn from experts with years of experience in film and broadcasting, applying your skills in real-world projects that enhance your portfolio. Our course offers a pathway to careers in film, television, and online media, supported by job placement assistance. <a href="">Read more</a></p>
                              <!-- Popus 23 -->
                              <button type="button" id="openPopup23">Enquire Now</button>
@@ -534,7 +520,7 @@
 
 
                         <div class="module-card module-h3">
-                            <h3>Python Course:</h3>
+                            <h3>Python:</h3>
                             <p>Dive into programming with TGC's Python Course, covering fundamentals to advanced topics, including data structures, web scraping, and automation. Our expert instructors bring real-world coding experience, offering an industry-relevant curriculum that emphasizes practical applications. With additional learning hours, you'll build a comprehensive portfolio, ready for tech roles in software development, data analysis, and more. <a href="">Read more</a></p>
                             <!-- Popus 25 -->
                             <button type="button" id="openPopup25">Enquire Now</button>
@@ -583,7 +569,7 @@
                         </div>
 
                         <div class="module-card module-h3">
-                            <h3>Data Science Course:</h3>
+                            <h3>Data Science:</h3>
                             <p>Transform into a data science expert with TGC's comprehensive course, covering Python, machine learning, deep learning, and AI. Learn from industry veterans, engaging in projects that tackle real-life data challenges. Our extended curriculum not only sharpens your skills but also helps you build an impressive portfolio. Graduates benefit from our robust job assistance program, setting you on the path to a promising data science career. <a href="">Read more</a></p>
                              <!-- Popus 27 -->
                              <button type="button" id="openPopup27">Enquire Now</button>
@@ -633,7 +619,7 @@
 
 
                         <div class="module-card module-h3">
-                            <h3>Digtial Marketing Course</h3>
+                            <h3>Digtial Marketing:</h3>
                             <p>TGC's Digital Marketing Course, where your strategic prowess meets the dynamic world of online marketing. Under the guidance of digital marketing gurus, our curriculum covers the latest in SEO, social media, content marketing, and analytics tools. Sharpen your skills through immersive projects, building a comprehensive portfolio that launches you into thrilling careers in digital marketing and beyond. <a href="">Read more</a></p>
                             <!-- Popus 29 -->
                             <button type="button" id="openPopup29">Enquire Now</button>
@@ -713,31 +699,33 @@
 
         <!-- Learn top Technologies Section -->
         <section class="case">
-            <h1>Learn top Technologies</h1>
+            <h1>Learn Top Technologies</h1>
             <div class="case-img">
                <div class="images1">
                 <img src="Assets/Image/adobe creative suite.png" alt="">
                 <img src="Assets/Image/photoshop.png" alt="">
                 <img src="Assets/Image/illustrator.png" alt="">
                 <img src="Assets/Image/indesign.png" alt="">
-                <img src="Assets/Image/html-5.png" alt="">
                </div>
                <div class="images1">
+                <img src="Assets/Image/html-5.png" alt="">
                 <img src="Assets/Image/java-script.png" alt="">
                 <img src="Assets/Image/react.png" alt="">
                 <img src="Assets/Image/php.png" alt="">
-                <img src="Assets/Image/python.png" alt="">
-                <img src="Assets/Image/node.png" alt="">
                </div>
                <div class="images1">
+                <img src="Assets/Image/python.png" alt="">
+                <img src="Assets/Image/node.png" alt="">
                 <img src="Assets/Image/adobe premier pro.png" alt="">
                 <img src="Assets/Image/after effects.webp" alt="">
+               </div>
+               <div class="images1">
                 <img src="Assets/Image/animate cc.png" alt="">
                 <img src="Assets/Image/3d max.png" alt="">
                 <img src="Assets/Image/maya.png" alt="">
+                <img src="Assets/Image/blender.png" alt="">
                </div>
                <div class="images1">
-                <img src="Assets/Image/blender.png" alt="">
                 <img src="Assets/Image/davince resolve.png" alt="">
                 <img src="Assets/Image/nuke.png" alt="">
                 <img src="Assets/Image/unreal engine.jpg" alt="">
@@ -828,24 +816,26 @@
                 <img src="Assets/Image/Hindustan_Times.svg.png" alt="">
                 <img src="Assets/Image/india today.png" alt="">
                 <img src="Assets/Image/rediffusion.jfif" alt="">
-                <img src="Assets/Image/aaj tak.png" alt="">
                </div>
                <div class="images1 company-images">
+                <img src="Assets/Image/aaj tak.png" alt="">
                 <img src="Assets/Image/tv18.png" alt="">
                 <img src="Assets/Image/NDTV_logo.svg.png" alt="">
                 <img src="Assets/Image/Google.webp" alt="">
-                <img src="Assets/Image/deloitte.png" alt="">
-                <img src="Assets/Image/kpmg.webp" alt="">
                </div>
                <div class="images1 company-images">
+                <img src="Assets/Image/deloitte.png" alt="">
+                <img src="Assets/Image/kpmg.webp" alt="">
                 <img src="Assets/Image/netlinks.png" alt="">
                 <img src="Assets/Image/radio mirchi.jpg" alt="">
+               </div>
+               <div class="images1 company-images">
                 <img src="Assets/Image/global.png" alt="">
                 <img src="Assets/Image/zomato.png" alt="">
                 <img src="Assets/Image/Amazon-logo.png" alt="">
+                <img src="Assets/Image/Flipkat.png" alt="">
                </div>
                <div class="images1 company-images">
-                <img src="Assets/Image/Flipkat.png" alt="">
                 <img src="Assets/Image/beato.png" alt="">
                 <img src="Assets/Image/dr morepan.avif" alt="">
                 <img src="Assets/Image/Red_Chillies.jpg" alt="">
@@ -1083,9 +1073,9 @@
            </div>
         </section>
 
-        <!-- Life @ TGC Section -->
+        <!-- Photo Gallery Section -->
         <section class="community">
-            <h1>Life@ TGC</h1>
+            <h1>Photo Gallery</h1>
             <div class="community-row">
                 <div class="community-col">
                     <img src="Assets/Image/tgc2.jpg" alt="">
@@ -1121,6 +1111,7 @@
                     <img src="Assets/Image/tgc8.jpeg" alt="">
                 </div>
             </div>
+            <p><a href="">More Photos</a></p>
         </section>
 
         <!-- About Us Section -->
@@ -1141,39 +1132,40 @@
             <h1>Students Work</h1>
             <div class="community-row">
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance1.jpg" alt=""></a>
+                    <img src="Assets/Image/behance1.jpg" alt="">
                 </div>
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance2.jpg" alt=""></a>
+                    <img src="Assets/Image/behance2.jpg" alt="">
                 </div>
             </div>
 
             <div class="community-row">
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance3.jpg" alt=""></a>
+                    <img src="Assets/Image/behance3.jpg" alt="">
                 </div>
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance4.jpg" alt=""></a>
+                    <img src="Assets/Image/behance4.jpg" alt="">
                 </div>
             </div>
 
             <div class="community-row">
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance5.jpg" alt=""></a>
+                    <img src="Assets/Image/behance5.jpg" alt="">
                 </div>
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance6.jpg" alt=""></a>
+                    <img src="Assets/Image/behance6.jpg" alt="">
                 </div>
             </div>
 
             <div class="community-row">
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance7.jpg" alt=""></a>
+                    <img src="Assets/Image/behance7.jpg" alt="">
                 </div>
                 <div class="community-col">
-                    <a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank"><img src="Assets/Image/behance8.jpg" alt=""></a>
+                    <img src="Assets/Image/behance8.jpg" alt="">
                 </div>
             </div>
+            <p><a href="https://www.behance.net/tgcindia1?tracking_source=search_projects%7Cproduct+photography+ideas" target="_blank">More Work</a></p>
         </section>
 
         <!-- FAQ's Section -->
@@ -1605,6 +1597,7 @@
                 <a href="">Adobe Creative Suite Training Palwal</a>|
                 <a href="">Career in Digital Marketing Palwal</a>
             </div>
+            <p>&copy; 2024 TGC Animation and Multimedia</p>
         </section>
         
     </div>
