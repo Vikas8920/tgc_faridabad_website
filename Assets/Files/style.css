@@ -52,8 +52,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     color: white;
-    position: fixed;
-    z-index: 9999999999999999999;
+    /* position: fixed;
+    z-index: 9999999999999999999; */
 }
 nav img{
     width: 90px;
