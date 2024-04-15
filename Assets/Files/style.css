@@ -1928,6 +1928,7 @@ nav .menu a:nth-child(5){
     /* Tag Section */
     .tag {
         padding: 20px 20px;
+        padding-bottom: 40px;
     }
     .tag .tag-row{
         width: 700px;
@@ -2489,7 +2490,7 @@ nav .menu a:nth-child(5){
 
     /* Tag Section */
     .tag{
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
     .tag .tag-row{
         width: 320px;
