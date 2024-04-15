@@ -2144,7 +2144,7 @@ nav .menu a:nth-child(5){
     /* Offline and Online Section */
     .deadline-container .deadline-row {
         width: 300px;
-        margin-top: -20px;
+        margin-top: 20px;
         flex-direction: column;
         gap: 30px;
     }
@@ -2166,6 +2166,7 @@ nav .menu a:nth-child(5){
     /* Advantage TGC Section */
     .program-container h1 {
         font-size: 30px;
+        margin-top: 20px;
     }
     .flex-row {
         display: flex;
@@ -2323,7 +2324,7 @@ nav .menu a:nth-child(5){
     .details h1 {
         font-size: 30px;
         margin-top: 40px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .details .details-accordion{
         width: 300px;
@@ -2333,13 +2334,7 @@ nav .menu a:nth-child(5){
     }
     .details .details-button button {
         padding: 15px 0;
-        font-weight: bold;
-        font-size: 18px;
-        outline: none;
-        border: none;
-        border-radius: 6px;
-        color: white;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
 
