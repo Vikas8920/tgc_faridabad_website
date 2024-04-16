@@ -2183,6 +2183,9 @@ nav ul li a:hover{
         margin-bottom: 50px;
         width: 320px;
     }
+    .module-container .module-row .module-col:nth-child(3) .module-card:nth-child(4) {
+        margin-top: 0px;
+    }
 
 
     /* Why To Choose TGC Faridabad Section */
