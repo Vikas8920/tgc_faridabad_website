@@ -2383,10 +2383,6 @@ function isValidPhoneNumber(phone){
 
 
 
-
-
-   
-
     // form 100
     $("#form100").submit(function(e){
         e.preventDefault();
