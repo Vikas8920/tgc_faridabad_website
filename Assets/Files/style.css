@@ -31,57 +31,6 @@ body{
 }
 
 
-/* .container .arrow{
-    margin-top: 40px;
-    transform: translateX(-35px);
-}
-
-.container .arrow1{
-    float: right;
-    transform: translateY(-100px);
-} */
-
-/* .syllabus_container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.syllabus_container .syllabus-content{
-    background-image: linear-gradient(135deg, #00b85f, #005f91);
-    width: 698px;
-    height: 58px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 500;
-    position: fixed;
-    top: 40px;
-    z-index: +1;
-    cursor: pointer;
-}
-.syllabus_container .syllabus-content h3{
-    color: white; 
-}
-.syllabus_container .syllabus-content h3 button{
-    color: white;
-    outline: none;
-    border: none;
-    background: transparent; 
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.syllabus_container .syllabus-content i{
-    color: white;
-    transform: translateX(120px);
-} */
-
-
-
-
 /* Hero Section */
 .hero{
     display: flex;
@@ -364,10 +313,10 @@ nav ul li a:hover{
 }
 .module-container .module-row .module-col:nth-child(3){
     width: 45%;
-    padding-top: 260px;
+    padding-top: 270px;
 }
-.module-container .module-row .module-col:nth-child(1) .module-card:nth-child(5){
-   transform: translateY(20px);
+.module-container .module-row .module-col:nth-child(3) .module-card:nth-child(4){
+    margin-top: -30px;
 }
 .module-container .module-row .module-col:nth-child(3) .module-card:nth-child(5){
     margin-top: -40px;
@@ -407,6 +356,7 @@ nav ul li a:hover{
     color: #007e39;
     font-size: 14px;
     margin-left: 5px;
+    cursor: pointer;
 }
 .module-container .module-row .module-col .module-h3 h3{
     left: 20px;
@@ -1387,16 +1337,13 @@ nav ul li a:hover{
 #popupForm9 form button{
     width: 100%;
 }
+#popupForm10 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
 #popupForm10 form button{
-    background-image: linear-gradient(135deg, #00b85f, #005f91);
-    margin-right: 15px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
+   padding: 10px 0;
+   font-size: 16px;
 }
 #popupForm11 form h2{
     font-size: 23px;
@@ -1584,7 +1531,78 @@ nav ul li a:hover{
    font-size: 16px;
    transform: translateX(-5px);
 }
-
+#popupForm31 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm31 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm32 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm32 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm33 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm33 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm34 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm34 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm35 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm35 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm36 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm36 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm37 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm37 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm38 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm38 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
+#popupForm39 form h2{
+    font-size: 25px;
+    margin-top: 0;
+}
+#popupForm39 form button{
+   padding: 10px 0;
+   font-size: 16px;
+}
 
 
 
@@ -2008,7 +2026,33 @@ nav ul li a:hover{
     #popupForm30 form button {
         font-size: 23px;
     }
-    
+    #popupForm31 form button {
+        font-size: 23px;
+    }
+    #popupForm32 form button {
+        font-size: 23px;
+    }
+    #popupForm33 form button {
+        font-size: 23px;
+    }
+    #popupForm34 form button {
+        font-size: 23px;
+    }
+    #popupForm35 form button {
+        font-size: 23px;
+    }
+    #popupForm36 form button {
+        font-size: 23px;
+    }
+    #popupForm37 form button {
+        font-size: 23px;
+    }
+    #popupForm38 form button {
+        font-size: 23px;
+    }
+    #popupForm39 form button {
+        font-size: 23px;
+    }
 }
 
 
@@ -2025,25 +2069,6 @@ nav ul li a:hover{
     .container .social img{
         width: 50px;
     }
-
-
-    /* .syllabus_container .syllabus-content {
-        width: 350px;
-        height: 58px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: 500;
-        position: fixed;
-        margin: auto;
-        top: 40px;
-    }
-    .syllabus_container .syllabus-content i{
-        transform: translateX(10px);
-    } */
-
 
 
     /* Hero Section */
@@ -2074,14 +2099,12 @@ nav ul li a:hover{
         width: 350px;
         padding: 0 25px;
     }
+    nav {
+        padding: 10px 10px 10px 0;
+    }
     nav ul {
         padding-left: 20px;
     }
-    /* .container .arrow1 {
-        float: right;
-        transform: translateY(-15px);
-        margin-top: 15px;
-    } */
     .col2 form h1 {
         font-size: 30px;
     }
@@ -2480,6 +2503,11 @@ nav ul li a:hover{
     #popupForm8 form button {
         transform: translateX(0);
     }
+    #popupForm10 form button {
+        padding: 5px 0;
+        padding-bottom: 0;
+        margin-left: 0;
+    }
     #popupForm11 form button {
         padding: 5px 0;
         padding-bottom: 0;
@@ -2560,6 +2588,6 @@ nav ul li a:hover{
     #popupForm30 form button {
         padding: 5px 0;
         padding-bottom: 0;
-    }
+    } 
 }
 
