@@ -1,42 +1,42 @@
 <?php
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data and sanitize it
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+    $formName = filter_input(INPUT_POST, 'formName', FILTER_SANITIZE_STRING);
 
-    // Database Connection
-    $servername = "localhost";     //Change it also with your server name
-    $username = "root";
-    $password = "";     
-    $dbname = "tgc_form";         //Change this with db name
-
-    // Create Connection
-    $conn = new mysqli($servername,$username,$password,$dbname);
-
-    // Check Connection
-    if($conn->connect_error){
-        die("Connection failed: " . $conn->connect_error);
+    // Validate that email is a valid address
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "<h2>Invalid Input</h2>";
+        echo "<p>Please provide a valid email address.</p>";
+        exit;
     }
 
-    // Get form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    // Send email to administrator
+    $to = "info@tgcindia.com";  
+    $subject = "New Form Submission: $formName";
+    $headers = "From: $email\r\nReply-To: $email\r\nX-Mailer: PHP/" . phpversion();
+    $message = "You have received a new form submission.\n\n";
+    $message .= "Name: $name\nEmail: $email\nPhone: $phone\nForm Name: $formName";
 
-    // Get the form information
-    $formName = $_POST['formName'];
-
-    // Insert data into database
-    $sql = "INSERT INTO form
-    (name, email, phone, formName) VALUES
-    ('$name', '$email', '$phone', '$formName')";
-
-    if($conn->query($sql) === TRUE){
+    if (mail($to, $subject, $message, $headers)) {
         echo "<h2>Form Submitted Successfully</h2>";
-        echo "<p>Thank you, $name! Your information has been successfully submitted</p>";
-    }
-    else{
+        echo "<p>Thank you, $name! Your information has been successfully submitted.</p>";
+        // Send confirmation email to the user
+        sendConfirmationEmail($name, $email);
+    } else {
         echo "<h2>Error Submitting Form</h2>";
-        echo "<p>Sorry, $name! There was an error submitting your information. Please try again later.</p>";
+        echo "<p>Sorry, there was an error submitting your information. Please try again later.</p>";
     }
+}
 
-    $conn->close();
+function sendConfirmationEmail($name, $email) {
+    $to = $email;
+    $subject = "Thank You for Your Submission";
+    $headers = "From: info@tgcindia.com\r\nReply-To: info@tgcindia.com\r\nX-Mailer: PHP/" . phpversion();
+    $message = "Dear $name,\n\nThank you for your interest. We have received your submission and will contact you shortly.\n\nBest regards,\nTGC India";
+
+    mail($to, $subject, $message, $headers);
 }
 ?>
