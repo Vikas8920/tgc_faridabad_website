@@ -49,7 +49,7 @@ $(document).ready(function(){
         if(!isValidPhoneNumber(phone)){
             $("#phoneError").text("Invalid phone number.");
             return;
-          }
+        }
 
         $("#form").unbind('submit').submit();
     });

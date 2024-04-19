@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Check Connection
     if($conn->connect_error){
-        die("Connection failed: ". $conn->connect_error);
+        die("Connection failed: " . $conn->connect_error);
     }
 
     // Get form data
@@ -20,20 +20,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $email = $_POST['email'];
     $phone = $_POST['phone'];
 
-    // Get the source information
-    $source = $_POST['source'];
+    // Get the form information
+    $formName = $_POST['formName'];
 
     // Insert data into database
     $sql = "INSERT INTO form
-    (name, email, phone, source) VALUES
-    ('$name', '$email', '$phone', '$source')";
+    (name, email, phone, formName) VALUES
+    ('$name', '$email', '$phone', '$formName')";
 
     if($conn->query($sql) === TRUE){
-        echo "<h2>Data inserted Successfully</h2>";
-        echo "<p>Thank you, $name! Your information has been successfully submitted</p>"
-    }else{
-        echo "<h2>Error Inserting Data</h2>";
-        echo "<p>Sorry, $name! There was an error submitting your information. Please try again later.</p>"
+        echo "<h2>Form Submitted Successfully</h2>";
+        echo "<p>Thank you, $name! Your information has been successfully submitted</p>";
+    }
+    else{
+        echo "<h2>Error Submitting Form</h2>";
+        echo "<p>Sorry, $name! There was an error submitting your information. Please try again later.</p>";
     }
 
     $conn->close();
