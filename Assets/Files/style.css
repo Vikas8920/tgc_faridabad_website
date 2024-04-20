@@ -1056,6 +1056,9 @@ nav ul li a:hover{
 .footer .footer-row:nth-child(2) .footer-col:nth-child(2){
     padding-bottom: 42px;
 }
+.footer .footer-row:nth-child(2) .footer-col:nth-child(4){
+    padding-bottom: 28px;
+}
 .footer .footer-row:nth-child(2) .footer-col ul li{
     list-style: none;
     font-size: 14px;
@@ -1065,6 +1068,9 @@ nav ul li a:hover{
 .footer .footer-row:nth-child(2) .footer-col ul li a{
     color: white;
     text-decoration: none;
+}
+.footer .footer-row:nth-child(2) .footer-col ul li a:hover{
+    color: rgba(241, 234, 234, 0.493);
 }
 .footer .footer-row .footer-col img{
     object-fit: cover;
@@ -1848,7 +1854,7 @@ nav ul li a:hover{
         gap: 0;
     }
     .footer img{
-        width: 500px;
+        width: 350px;
         object-fit: contain;
         margin-top: 20px;
     }
@@ -2067,7 +2073,7 @@ nav ul li a:hover{
         z-index: +1;
     }
     .container .social img{
-        width: 50px;
+        width: 40px;
     }
 
 
