@@ -14,9 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Send email to administrator
-    $to = "info@tgcfaridabad.com";  
+    $to = "info@tgcfaridabad.com, info@tgc.com";  
     $subject = "New Form Submission: $formName";
-    $headers = "From: $email\r\nReply-To: $email\r\nX-Mailer: PHP/" . phpversion();
+    $headers = "From: info@tgcfaridabad.com\r\n";
+    $headers .= "Reply-To: info@tgcfaridabad.com\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+
     $message = "You have received a new form submission.\n\n";
     $message .= "Name: $name\nEmail: $email\nPhone: $phone\nForm Name: $formName";
 
@@ -25,6 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p>Thank you, $name! Your information has been successfully submitted.</p>";
         // Send confirmation email to the user
         sendConfirmationEmail($name, $email);
+
+        // Redirect to thank-you page before output
+        header("Location: https://tgcindia.com/thanks");
+        exit; 
+
     } else {
         echo "<h2>Error Submitting Form</h2>";
         echo "<p>Sorry, there was an error submitting your information. Please try again later.</p>";

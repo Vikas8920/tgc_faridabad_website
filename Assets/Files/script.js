@@ -2508,4 +2508,18 @@ function isValidPhoneNumber(phone){
         $moreText.toggle();
         $this.text($moreText.is(':visible') ? 'Read less' : 'Read more');
     });
+
+
+
+    // Tags
+    $('.state-link').on('click', function(event){
+        event.preventDefault();
+
+        let stateName = $(this).data('state');
+        let newUrl = window.location.origin + '#' + stateName;
+
+        window.history.pushState({path:newUrl}, '', newUrl);
+
+        window.location.reload();
+    });
 });
