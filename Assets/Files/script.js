@@ -2512,14 +2512,42 @@ function isValidPhoneNumber(phone){
 
 
     // Tags
+    // $('.state-link').on('click', function(event){
+    //     event.preventDefault();
+
+    //     let stateName = $(this).data('state');
+    //     let newUrl = window.location.origin + '/' + stateName;
+
+    //     window.history.pushState({path:newUrl}, '', newUrl);
+
+    //    // window.location.reload();
+    // });
+
     $('.state-link').on('click', function(event){
         event.preventDefault();
 
         let stateName = $(this).data('state');
-        let newUrl = window.location.origin + '#' + stateName;
-
+        let location = $(this).data('location');
+        let pageTitle = $(this).data('title');
+        let pageDescription = $(this).data('description');
+        let newUrl = window.location.origin + '/' + stateName;
+        
+        // Update URL
         window.history.pushState({path:newUrl}, '', newUrl);
 
-        window.location.reload();
+        // Update Heading
+        $('.page-heading').text(location.charAt(0).toUpperCase() + location.slice(1));
+        
+        // Update Page Title
+        document.title = stateName.charAt(0).toUpperCase() + stateName.slice(1);
+
+        // Update Page Title
+        document.title = pageTitle;
+
+        // Update Meta Description
+        $('meta[name=description]').attr('content', pageDescription);
+
+        // Scroll to top
+        $('html, body').animate({scrollTop: 0});
     });
 });
